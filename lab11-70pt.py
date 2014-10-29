@@ -26,7 +26,7 @@ def animate():
 #Changing the direction changes the speed
         direction = - 5
     elif x1 < 0:
-        direction = 5
+        direction = 1
     #Move our oval object by the value of direction
     drawpad.move(circle,direction,0)
     # Wait for 1 millisecond, then recursively call our animate function
