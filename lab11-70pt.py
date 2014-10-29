@@ -14,6 +14,7 @@ drawpad = Canvas(root, width=800,height=600, background='white')
 drawpad.grid(row=0, column=0)
 
 # Create the oval
+# This below is what we use to change the ball size
 circle = drawpad.create_oval(20, 20, 100, 100, fill='green')
 direction = 1
 # Create our animation function
@@ -22,6 +23,7 @@ def animate():
     # Get the x and y co-ordinates of the circle
     x1, y1, x2, y2 = drawpad.coords(circle)
     if x2 > drawpad.winfo_width(): 
+#Changing the direction changes the speed
         direction = - 5
     elif x1 < 0:
         direction = 5
